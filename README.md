@@ -1,1 +1,1 @@
-# Game
+# Cursor-ai

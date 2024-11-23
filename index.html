@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-selection">
+        <label for="game-choice">Choose a game:</label>
+        <select id="game-choice">
+            <option value="">--Please choose an option--</option>
+            <option value="snake">Snake</option>
+            <option value="uno">Uno</option>
+        </select>
+    </div>
+    <div id="snake-container" class="game-container">
+        <canvas id="snake-board"></canvas>
+        <div id="snake-score">Score: <span id="snake-score-value">0</span></div>
+        <div class="controls">
+            <div class="control-row">
+                <button id="up-btn">↑</button>
+            </div>
+            <div class="control-row">
+                <button id="left-btn">←</button>
+                <button id="down-btn">↓</button>
+                <button id="right-btn">→</button>
+            </div>
+        </div>
+    </div>
+    <div id="uno-container" class="game-container">
+        <div id="opponent-hand" class="hand"></div>
+        <div id="discard-pile"></div>
+        <div id="player-hand" class="hand"></div>
+        <button id="draw-card">Draw Card</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
